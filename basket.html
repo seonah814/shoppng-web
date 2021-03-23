@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Basket</title>
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<style type="text/css">
+		@media only screen and (max-width: 900px) {
+			#buy_f1 {
+				text-align: center;
+			}
+			#buy_c1 {
+				width: 80%;
+			}
+			#buy_c2 {
+				width: 80%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="whole">
+		<header class="web12">
+			<a href="Cherry Blossom.html"><img src="img/flower1.png" width="40" height="40">CHERRY BLOSSOM<img src="img/flower1.png" width="40" height="40"></a>
+		</header>
+
+		<div id="person">
+			<span><a href="login_form.html">Login</a></span>&nbsp;&nbsp;
+			<span style="margin-left: 15px;"><a href="join_form.html">Join</a></span>
+		</div>
+
+		<div class="easter_egg" style="text-align: center;">
+			<button class="trigger" style="width: 60px; position: relative;bottom: 44px;right: 250px;background-color: rgba(225,225,225,0);")>
+				<video id="dudu_s" src="img/dudu.mp4" autoplay loop style="position: relative;z-index: -1;">
+			</button>
+
+			<div class="modal">
+				<div class="modal-content">
+					<span class="close-button">&times;</span>
+					<h1 class="title_egg" style="margin-bottom: 20px;font-size: 40px;">-GAME-</h1>
+
+					<div id="wrap">
+                    	<div id="wrap_1">
+                       		<a class="a" onclick="openLayer('layerPop1')">
+                            	<img src="img/두더지.png">
+                        	</a>
+                        	<div id="layerPop1" style="position: absolute;display: none">
+                            	<a onclick="closeHref('layerPop1')" class="close">
+                                	<p><img src="img/catchevent.png" style="width: 610px;"></p>
+                            	</a>
+                        	</div>
+
+                        	<a class="b" onclick="openLayer('layerPop2')">
+                        		<img src="img/당근.png">
+                        	</a>
+                            <div id="layerPop2" style="position: relative; left: 210px; display: none;">
+                                <a onclick="closeHref('layerPop2')" class="close">
+                                    <p><img src="img/bbam.png" style="width: 200px;"></p>
+                                </a>
+                            </div>
+
+                        	<a class="c" onclick="openLayer('layerPop3')">
+                        		<img src="img/쭈꾸미.png">
+                        	</a>
+                            <div id="layerPop3" style="position: relative; left: 210px; display: none;">
+                                <a onclick="closeHref('layerPop3')" class="close">
+                                    <p><img src="img/bbam.png" style="width: 200px;"></p>
+                                </a>
+                            </div>
+
+                        	<a class="d" onclick="openLayer('layerPop4')">
+                        		<img src="img/곰.png">
+                        	</a>
+                            <div id="layerPop4" style="position: relative; left: 210px; display: none;">
+                                <a onclick="closeHref('layerPop4')" class="close">
+                                    <p><img src="img/bbam.png" style="width: 200px;"></p>
+                                </a>
+                            </div>
+
+                        	<a class="e" onclick="openLayer('layerPop5')">
+                        		<img src="img/용.png" style="width: 37px;">
+                        	</a>
+                            <div id="layerPop5" style="position: relative; left: 210px; display: none;">
+                            	<a onclick="closeHref('layerPop5')" class="close">
+                                	<p><img src="img/bbam.png" style="width: 200px;"></p>
+                            	</a>
+                            </div>
+                        </div>
+                	</div>
+                	<p style="color: black; padding-top: 10px;">게임 방법 : <b>두더지</b>를 잡으세요!</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="additional_menubar" style="margin-top: -74px;">
+			<ul>
+				<li><a href="Cherry Blossom.html">HOME</a></li>
+				<li id="b1"><a href="basket.html">BASKET</a></li>
+				<li><a href="event.html">EVENT</a></li>
+			</ul>
+		</div>
+
+		<div id="buy_p_no0">
+			<div id="buy_p1">
+				<div id="buy_f1">
+					<h2 style="margin-bottom: 10px;">주문하기</h2>
+					<p>주문내역과 회원 정보를 정확하게 확인하시고 결제버튼을 눌러주십시오.</p>
+				</div>
+				<table id="buy_c1">
+					<tr style="background-color: #F2F2F2">
+						<th></th>
+						<th></th>
+						<th>상품 정보</th>
+						<th></th>
+						<th>판매금액</th>
+						<th>수량</th>
+						<th>주문금액</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr style="background-color: #FBFAF7">
+						<td><input type="checkbox"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr height=40  style="background-color: #FBFAF7">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="7" style="text-align: right;">총 주문금액:&nbsp;&nbsp;&nbsp;원&nbsp;</td>
+					</tr>
+				</table>
+				<br>
+				<hr>
+				<br>
+				<div id="buy_f2">
+					<h2>주문자 정보</h2>
+				</div>
+				<table id="buy_c2">
+					<tr>
+						<td style="background-color: #F2F2F2">주문자명</td>
+						<td colspan="3"><input type="text" style="width: 38%;height: 20px;"></td>
+					</tr>
+					<tr>
+						<td style="background-color: #FBFAF7">일반전화</td>
+						<td><select style="width: 40px;">
+							<option>02</option>
+							<option>031</option>
+							<option>033</option>
+							<option>053</option>
+							<option>062</option>
+							<option>063</option>
+						</select> - <input class="hp" type="text" style="width: 60px;"> - <input class="hp" type="text" style="width: 60px;"></td>
+						<td style="background-color: #FBFAF7">휴대전화</td>
+						<td><select>
+							<option>010</option>
+							<option>011</option>
+							<option>017</option>
+							<option>018</option>
+						</select> - <input type="text" style="width: 60px;"> - <input type="text" style="width: 60px;"></td>
+					</tr>
+					<tr>
+						<td style="background-color: #F2F2F2">이메일</td>
+						<td colspan="3"><input type="text" style="width: 30%;height: 20px;"> @ <select style="width: 40%;height: 22px;">
+							<option>naver.com</option>
+							<option>daum.net</option>
+							<option>google.com</option>
+							<optgroup>hamail.net</optgroup>
+						</select></td>
+					</tr>
+					<tr>
+						<td style="background-color: #FBFAF7">주소지</td>
+						<td colspan="3"><textarea style="width: 100%;resize: none;"></textarea></td>
+					</tr>
+				</table>
+				
+				<div id="buy_b1">
+					<a href=""><button>BUY</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="Cherry Blossom.html"><button value="CANCEL">CANCEL</button></a>
+				</div>
+				<br>
+				<br>
+				<hr>
+				<br>
+			</div>
+		</div>
+		
+		<div id="up">
+			<p><a href="#">▲TOP</a></p>
+		</div>
+	</div>
+	<footer class="web12">
+		COPYRIGHT (C) 2019. KIM SEON AH. All Rights Reserved.
+	</footer>
+
+	<script type="text/javascript">
+        /*레이어 팝업*/
+        var modal=document.querySelector(".modal");
+        var trigger=document.querySelector(".trigger");
+        var closeButton=document.querySelector(".close-button");
+
+        function toggleModal() {
+            modal.classList.toggle("show-modal");
+        }
+
+        function windowOnclick(event) {
+            if(event.target===modal) {
+            toggleModal();
+            }
+        }
+
+        trigger.addEventListener("click", toggleModal);
+        closeButton.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnclick);
+
+
+        /*이스터에그*/
+        $(document).ready(function(){
+    		animateDiv();
+    
+		});
+
+		function makeNewPosition(){
+    
+    		// Get viewport dimensions (remove the dimension of the div)
+    		var h = $('#wrap').height() +10;
+    		var w = $('#wrap').width() +10;
+    
+    		var nh = Math.floor(Math.random() * h -40);
+    		var nw = Math.floor(Math.random() * w - 50);
+    
+    		return [nh,nw];    
+    
+		}
+
+		function animateDiv(){
+    		var newq = makeNewPosition();
+
+    		var oldq1 = $('.a').offset();
+    		var oldq2 = $('.b').offset();
+    		var oldq3 = $('.c').offset();
+    		var oldq4 = $('.d').offset();
+    		var oldq5 = $('.e').offset();
+
+    		var speed1 = calcSpeed([oldq1.top, oldq1.left], newq);
+    		var speed2 = calcSpeed([oldq2.top, oldq2.left], newq);
+    		var speed3 = calcSpeed([oldq3.top, oldq3.left], newq);
+    		var speed4 = calcSpeed([oldq4.top, oldq4.left], newq);
+    		var speed5 = calcSpeed([oldq5.top, oldq5.left], newq);
+    
+    		$('.a').animate({ top: newq[0] + 170, left: newq[1] - 200}, speed1-2000, function(){
+      		animateDiv();        
+    		});
+    		$('.b').animate({ top: newq[0] + 100, left: newq[1] + 80 }, speed2, function(){
+      		animateDiv();        
+    		});
+    		$('.c').animate({ top: newq[0] - 70, left: newq[1] - 100 }, speed3-60, function(){
+      		animateDiv();        
+    		});
+    		$('.d').animate({ top: newq[0] - 200, left: newq[1] + 10 }, speed4-840, function(){
+      		animateDiv();        
+    		});
+    		$('.e').animate({ top: newq[0], left: newq[1] }, speed5-1300, function(){
+      		animateDiv();        
+    		});
+    
+		};
+
+		function calcSpeed(prev, next) {
+    
+    		var x = Math.abs(prev[1] - next[1]);
+    		var y = Math.abs(prev[0] - next[0]);
+    
+    		var greatest = x > y ? x : y;
+    
+    		var speedModifier = 0.1;
+
+    		var speed = Math.ceil(greatest/speedModifier);
+
+    		return speed;
+
+		}
+
+        /*레이어 팝업(이미지)열기*/
+        var cnt=0;
+        function openLayer(IdName) {
+            if(cnt==0) {
+                cnt++;
+                var pop = document.getElementById(IdName);
+                pop.style.display = "block";
+            }
+        }
+
+        /*레이어 팝업(이미지)닫기*/
+        function closeHref(IdName) {
+            location.href="basket.html"; //변경
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Event</title>
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+		/*레이어 팝업 열기*/
+		var cnt = 0; /*닫여있을때*/
+		function openLayer(IdName){
+		  if(cnt==0){
+			cnt++; /*그림을 보여줌*/
+			var pop = document.getElementById(IdName);
+			pop.style.display = "block";
+		  }
+		}
+
+		/*레이어 팝업 닫기*/
+		function closeLayer(IdName){
+			var pop = document.getElementById(IdName);
+			pop.style.display = "none";
+			cnt=0; 
+		}
+	</script>
+</head>
+<body>
+	<div class="whole">
+		<header class="web12">
+			<a href="Cherry Blossom.html"><img src="img/flower1.png" width="40" height="40">CHERRY BLOSSOM<img src="img/flower1.png" width="40" height="40"></a>
+		</header>
+
+		<div id="person">
+			<span><a href="login_form.html">Login</a></span>&nbsp;&nbsp;
+			<span style="margin-left: 15px;"><a href="join_form.html">Join</a></span>
+		</div>
+
+		<div id="additional_menubar">
+			<ul>
+				<li><a href="Cherry Blossom.html">HOME</a></li>
+				<li><a href="basket.html">BASKET</a></li>
+				<li id="b1"><a href="event.html">EVENT</a></li>
+			</ul>
+		</div>
+
+		<div class="event-no0">
+			<a onclick="openLayer('layerPop1')">
+				<img id="e1" src="img/event2.png">
+			</a>
+			<div id="layerPop1" style="position: relative; right: 45px;">
+				<a onclick="closeLayer('layerPop1')" class="close">
+					<p><img src="img/event2-1.png" style="border: none;width: 60%;"></p>
+				</a>
+			</div>
+
+			<a onclick="openLayer('layerPop2')">
+				<img id="e2" src="img/event1.png">
+			</a>
+			<div id="layerPop2" style="position: relative;left: 40px;">
+				<a onclick="closeLayer('layerPop2')" class="close">
+					<p><img src="img/event1-1.png" style="border:none;width: 60%;"></p>
+				</a>
+			</div>
+			
+			<a onclick="openLayer('layerPop3')">
+				<img id="e3" src="img/event3.png">
+			</a>
+			<div id="layerPop3" style="position: relative;right: 40px;bottom: 40px;">
+				<a onclick="closeLayer('layerPop3')" class="close">
+					<p><img src="img/event3-1.png" style="border: none;width: 60%;"></p>
+				</a>
+			</div>
+		</div>
+
+		<div id="up">
+			<p><a href="#">▲TOP</a></p>
+		</div>
+	</div>
+	<footer class="web12">
+		COPYRIGHT (C) 2019. KIM SEON AH. All Rights Reserved.
+	</footer>
+</body>
+</html>

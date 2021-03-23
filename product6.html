@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Product6</title>
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+    <style type="text/css">
+        @media only screen and (max-width: 900px) {
+            .explain_p {
+                margin-left: 0;
+                width: 100%;
+            }
+            #i {
+                width: 100%;
+            }
+            #info-p {
+                width: 75%;
+                height: 75%;
+            }   
+        }
+        @media only screen and (max-width: 1350px) and (min-width: 900px) {
+            .explain_p {
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+	<div class="whole">
+
+		<header class="web12">
+			<a href="Cherry Blossom.html"><img src="img/flower1.png" width="40" height="40">CHERRY BLOSSOM<img src="img/flower1.png" width="40" height="40"></a>
+		</header>
+
+		<div id="person">
+			<span><a href="login_form.html">Login</a></span>&nbsp;&nbsp;
+			<span style="margin-left: 15px;"><a href="join_form.html">Join</a></span>
+		</div>
+
+		<div id="menu-top">
+			<ul>
+				<div class="dropdown">
+					<button class="dropbtn">≡</button>
+					<div class="dropdown-content">
+						<a href="Cherry Blossom.html">HOME</a>
+						<a href="basket.html">BASKET</a>
+						<a href="event.html">EVENT</a>
+						<a href="login_form.html">LOGIN</a>
+						<a href="join_form.html">JOIN</a>
+					</div>
+				</div>
+
+				<li><a href="Cherry Blossom.html">메인</a></li>
+				<li><a href="귀찌.html">귀찌</a></li>
+				<li id="a1"><a href="귀걸이.html">귀걸이</a></li>
+				<li><a href="소개.html">소개</a></li>
+				<li><a href="문의.html">문의</a></li>
+			</ul>
+		</div>
+		
+		<div class="easter_egg" style="text-align: center;">
+			<button class="trigger" style="width: 60px;position: relative;top: 28px;right: 300px;background-color: rgba(225,225,225,0);">
+				<img id="dudu_s" src="img/dudu3.png" style="position: relative;">
+			</button>
+
+			<div class="modal">
+				<div class="modal-content">
+					<span class="close-button">&times;</span>
+					<h1 class="title_egg" style="margin-bottom: 20px;font-size: 40px;">-GAME-</h1>
+
+					<div id="wrap">
+                    	<div id="wrap_1">
+                       		<a class="a" onclick="openLayer('layerPop1')">
+                            	<img src="img/두더지.png">
+                        	</a>
+                        	<div id="layerPop1" style="position: absolute;display: none">
+                            	<a onclick="closeHref('layerPop1')" class="close">
+                                	<p><img src="img/catchevent.png" style="width: 610px;"></p>
+                            	</a>
+                        	</div>
+
+                        	<a class="b" onclick="openLayer('layerPop2')">
+                        		<img src="img/당근.png">
+                        	</a>
+                            <div id="layerPop2" style="position: relative; left: 210px; display: none;">
+                                <a onclick="closeHref('layerPop2')" class="close">
+                                     <p><img src="img/bbam.png" style="width: 200px;"></p>
+                                </a>
+                            </div>
+
+                        	<a class="c" onclick="openLayer('layerPop3')">
+                        		<img src="img/쭈꾸미.png">
+                        	</a>
+                            <div id="layerPop3" style="position: relative; left: 210px; display: none;">
+                                <a onclick="closeHref('layerPop3')" class="close">
+                                    <p><img src="img/bbam.png" style="width: 200px;"></p>
+                                </a>
+                            </div>
+
+                        	<a class="d" onclick="openLayer('layerPop4')">
+                        		<img src="img/곰.png">
+                        	</a>
+                            <div id="layerPop4" style="position: relative; left: 210px; display: none;">
+                                <a onclick="closeHref('layerPop4')" class="close">
+                                    <p><img src="img/bbam.png" style="width: 200px;"></p>
+                                </a>
+                            </div>
+
+                        	<a class="e" onclick="openLayer('layerPop5')">
+                        		<img src="img/용.png" style="width: 37px;">
+                        	</a>
+                            <div id="layerPop5" style="position: relative; left: 210px; display: none;">
+                                <a onclick="closeHref('layerPop5')" class="close">
+                                    <p><img src="img/bbam.png" style="width: 200px;"></p>
+                                </a>
+                            </div>
+                        </div>
+               		</div>
+                	<p style="color: black; padding-top: 10px;">게임 방법 : <b>두더지</b>를 잡으세요!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="item" style="margin-top: 15px;">
+			<h1 id="p">허니비 드림</h1>
+			<div id="product-no1">
+				<div id="product-no2">
+					<img id="i" src="img/bee2.png" width="40%">
+					<div class="explain_p">
+						<ul class="pe">
+							<br>
+							<li style="color: red;">▷판매가 : 25,900원</li>
+							<li>▶적립금 : 259원(1%)</li>
+							<li style="color: skyblue;">▷상품정보 : [은침]</li>
+							<li>▶배송비 : 2,500원 (30,000원 이상 구매시 무료)</li>
+							<hr width="480">
+						</ul>
+						<ul>
+							<li id="s">&nbsp;&nbsp;Product <input type="number" style="width: 40px;"> &nbsp; 가격 :</li>
+							<hr width="480">
+							<li id="s1">total price :</li>
+						</ul>
+						<ul id="basket">
+							<button><a href="">즉시구매</a></button>
+							<button><a href="">장바구니</a></button>
+						</ul>
+					</div>
+				</div>
+
+				<hr id="centerline" width="950" style="margin: auto;">
+
+				<ul class="i1">
+					<li><img src="img/bee.png"></li>
+					<li><img src="img/bee1.png"></li>
+					<li><img src="img/bee3.png"></li>
+				</ul>
+				<ul class="info">
+					<h2 id="info-t">-허니비 드림-</h2>
+					<img id="info-p" src="img/spring.png" width="280" height="290">
+					<br>
+					<li><b>컬러</b> : PINK, GOLD, SILVER</li>
+					<li><b>사이즈</b> : Large</li>
+					<li><b>수량</b> : 한 쌍</li>
+					<li><b>코팅 & 도금</b> : 일반도금</li>
+					<li><b>사이즈 조절</b> : ONE SIZE</li>
+					<li>──────────────────</li>
+					<li><b>▷주의해야할 TIP</b></li>
+					<li>금, 써지컬 스틸을 제외한 은(silver)이나 도금된 액세서리는 물이나 기름에 오래 방치할 경우, 변질될 수 있으니 착용 후에는 마른 천 등으로 청결히 한 후, 동봉해 드리는 지퍼백에 꼭 보관해주시기 바랍니다.</li>
+					<br>
+				</ul>
+			</div>
+		</div>
+
+        <div id="f_up">
+            <p><a href="#">▲</a></p>
+        </div>
+        
+		<div id="up">
+			<p><a href="#">▲TOP</a></p>
+		</div>
+	</div>
+
+    <footer class="web12">
+        COPYRIGHT (C) 2019. KIM SEON AH. All Rights Reserved.
+    </footer>
+
+	<script type="text/javascript">
+        /*레이어 팝업*/
+        var modal=document.querySelector(".modal");
+        var trigger=document.querySelector(".trigger");
+        var closeButton=document.querySelector(".close-button");
+
+        function toggleModal() {
+            modal.classList.toggle("show-modal");
+        }
+
+        function windowOnclick(event) {
+            if(event.target===modal) {
+            toggleModal();
+            }
+        }
+
+        trigger.addEventListener("click", toggleModal);
+        closeButton.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnclick);
+
+
+        /*이스터에그*/
+        $(document).ready(function(){
+    		animateDiv();
+    
+		});
+
+		function makeNewPosition(){
+    
+    		// Get viewport dimensions (remove the dimension of the div)
+    		var h = $('#wrap').height() +10;
+    		var w = $('#wrap').width() +10;
+    
+    		var nh = Math.floor(Math.random() * h -40);
+    		var nw = Math.floor(Math.random() * w - 50);
+    
+    		return [nh,nw];    
+    
+		}
+
+		function animateDiv(){
+    		var newq = makeNewPosition();
+
+    		var oldq1 = $('.a').offset();
+    		var oldq2 = $('.b').offset();
+    		var oldq3 = $('.c').offset();
+    		var oldq4 = $('.d').offset();
+    		var oldq5 = $('.e').offset();
+
+    		var speed1 = calcSpeed([oldq1.top, oldq1.left], newq);
+    		var speed2 = calcSpeed([oldq2.top, oldq2.left], newq);
+    		var speed3 = calcSpeed([oldq3.top, oldq3.left], newq);
+    		var speed4 = calcSpeed([oldq4.top, oldq4.left], newq);
+    		var speed5 = calcSpeed([oldq5.top, oldq5.left], newq);
+    
+    		$('.a').animate({ top: newq[0] + 170, left: newq[1] - 200}, speed1-2000, function(){
+      		animateDiv();        
+    		});
+    		$('.b').animate({ top: newq[0] + 100, left: newq[1] + 80 }, speed2, function(){
+      		animateDiv();        
+    		});
+    		$('.c').animate({ top: newq[0] - 70, left: newq[1] - 100 }, speed3-60, function(){
+      		animateDiv();        
+    		});
+    		$('.d').animate({ top: newq[0] - 200, left: newq[1] + 10 }, speed4-840, function(){
+      		animateDiv();        
+    		});
+    		$('.e').animate({ top: newq[0], left: newq[1] }, speed5-1300, function(){
+      		animateDiv();        
+    		});
+    
+		};
+
+		function calcSpeed(prev, next) {
+    
+    		var x = Math.abs(prev[1] - next[1]);
+    		var y = Math.abs(prev[0] - next[0]);
+    
+    		var greatest = x > y ? x : y;
+    
+    		var speedModifier = 0.1;
+
+    		var speed = Math.ceil(greatest/speedModifier);
+
+    		return speed;
+
+		}
+
+        /*레이어 팝업(이미지)열기*/
+        var cnt=0;
+        function openLayer(IdName) {
+            if(cnt==0) {
+                cnt++;
+                var pop = document.getElementById(IdName);
+                pop.style.display = "block";
+            }
+        }
+
+        /*레이어 팝업(이미지)닫기*/
+        function closeHref(IdName) {
+            location.href="product6.html"; //변경
+        }
+    </script>	
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cherry Blossom</title>
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		@media only screen and (max-width: 800px) {
+			[id="best0"] {
+				width: 100%;
+				float: left;
+			}
+			[class="slides"] {
+				width: 100%;
+				float: left;
+			}
+			[class="mySlides"] {
+				width: 100%;
+				float: left;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="whole">
+		<header class="web12">
+			<a href="Cherry Blossom.html"><img src="img/flower1.png" width="40" height="40">CHERRY BLOSSOM<img src="img/flower1.png" width="40" height="40"></a>
+		</header>
+
+		<div id="person">
+			<span><a href="login_form.html">Login</a></span>&nbsp;&nbsp;
+			<span style="margin-left: 15px;"><a href="join_form.html">Join</a></span>
+		</div>
+
+		<section id="menu-top" class="web11_1">
+			<ul>
+				<div class="dropdown">
+					<button class="dropbtn">≡</button>
+
+					<div class="dropdown-content">
+						<a href="Cherry Blossom.html">HOME</a>
+						<a href="basket.html">BASKET</a>
+						<a href="event.html">EVENT</a>
+						<a href="login_form.html">LOGIN</a>
+						<a href="join_form.html">JOIN</a>
+					</div>
+				</div>
+
+				<li id="a1"><a href="Cherry Blossom.html">메인</a></li>
+				<li><a href="귀찌.html">귀찌</a></li>
+				<li><a href="귀걸이.html">귀걸이</a></li>
+				<li><a href="소개.html">소개</a></li>
+				<li><a href="문의.html">문의</a></li>
+			</ul>
+		</section>
+
+		<div id="best0">
+			<div id="best">
+				<h1 id="best5">-The Best 5-</h1><br>
+				<div class="slides">
+  					<a href="n_product2.html"><img class="mySlides" src="img/pinkflower2.png"></a>
+ 					<a href="product2.html"><img class="mySlides" src="img/holiday1.png"></a>
+ 					<a href="product5.html"><img class="mySlides" src="img/dream2.png"></a>
+ 					<a href="product4.html"><img class="mySlides" src="img/sea2-1.png"></a>
+ 					<a href="n_product5.html"><img class="mySlides" src="img/mini1.png"></a>
+ 				</div>
+			</div>
+		</div>
+
+		<div id="up">
+			<p><a href="#">▲TOP</a></p>
+		</div>
+	</div>
+	
+	<footer class="web12">
+		COPYRIGHT (C) 2019. KIM SEON AH. All Rights Reserved.
+	</footer>
+
+	<script type="text/javascript">
+
+		//자동 슬라이드
+		var myIndex = 0;
+		move();
+		function move() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(move, 2000); // 일정 시간(2초)후에 move 함수를 의도적으로 지연한 뒤 실행하고 싶을때 사용하는 함수임
+		} 
+		
+	</script>
+</body>
+</html>
